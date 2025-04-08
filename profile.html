@@ -199,11 +199,10 @@
     document.getElementById('followers-count').textContent = myUser.followers || 0;
     document.getElementById('following-count').textContent = myUser.following || 0;
 
-    // For the current user, show Edit Profile and Logout buttons.
+    // For the current user, show Edit Profile.
     const actionButtons = document.getElementById('action-buttons');
     actionButtons.innerHTML = `
       <button class="btn edit-btn" id="edit-btn">Edit Profile</button>
-      <button class="btn logout-btn" id="logout-btn">Logout</button>
     `;
 
     // Toggle Edit Profile Form.
